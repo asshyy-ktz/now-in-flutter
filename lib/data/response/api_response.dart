@@ -1,24 +1,18 @@
-
-
 import 'package:now_in_flutter/data/response/status.dart';
 
 class ApiResponse<T> {
-  //Coming from eum class
   Status? status;
-  //Dynamic function to take the data
   T? data;
-  //message
   String? message;
-  //constructor
+
   ApiResponse(this.status, this.data, this.message);
 
-  //If data is loading then it'll take loading from status enum
-  ApiResponse.loading() : status = Status.loading;
-  ApiResponse.completed(this.data) : status = Status.completed;
-  ApiResponse.error(this.message) : status = Status.error;
-  //Override method
+  ApiResponse.loading() : status = Status.LOADING;
+  ApiResponse.completed(this.data) : status = Status.COMPLETED;
+  ApiResponse.error(this.message) : status = Status.ERROR;
+
   @override
   String toString() {
-    return "Status : $status \n Message : $message \n Data: $data";
+    return "Status : $status \n Message :  $message \n Data: $data";
   }
 }

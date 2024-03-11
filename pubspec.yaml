@@ -16,6 +16,11 @@ dependencies:
   provider: ^6.0.3
   get: ^4.6.5
   shared_preferences: ^2.0.15
+  flutter_svg: ^2.0.7 
+  google_fonts: ^5.1.0 
+  lottie: ^3.0.0
+  animations: ^2.0.11
+  flutter_flavorizr: ^2.2.1
 
 dev_dependencies:
   flutter_test:
@@ -24,3 +29,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/json/
+    - assets/audios/
