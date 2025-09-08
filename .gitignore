@@ -1,96 +1,45 @@
-# This is a combined and cleaned .gitignore for a Flutter project.
-
-# IDE and Editor files
-.atom/
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
 .DS_Store
+.atom/
+.build/
+.buildlog/
 .history
-.idea/
-.project
-.settings/
 .svn/
-.vscode/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
 *.iml
 *.ipr
 *.iws
-*.swp
-*~
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
 
 # Flutter/Dart/Pub related
-.dart_tool/
-.env
-.flutter-plugins
-.flutter-plugins-dependencies
-.metadata
-.packages
-.pub/
-.pub-cache/
-pubspec.lock
-/build/
-/coverage/
 **/doc/api/
 **/ios/Flutter/.last_build_id
-/android/app/debug/
-/android/app/profile/
-/android/app/release/
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
 
-# Generated files and build artifacts
-*.aab
-*.apk
-*.dmg
-*.ipa
-*.log
-*.pyc
-*.class
-app.*.map.json
+# Symbolication related
 app.*.symbols
-**/crashlytics-build.log
-/android/.gradle/
-/android/app/build/
-/android/app/src/main/kotlin/com/example/flutter_app_structure/
-/android/gradle/
-/ios/.symlinks/
-/ios/Flutter/
-/ios/Pods/
-/ios/RunnerTests/
-/ios/Runner.xcodeproj/project.xcworkspace/
-/ios/Runner.xcworkspace/
-/linux/flutter/
-/macos/build/
-/macos/Flutter/
-/macos/Runner.xcodeproj/project.xcworkspace/
-/macos/Runner.xcworkspace/
-/windows/build/
-/windows/flutter/
-/migrate_working_dir/
-.swiftpm/
 
-# Local configuration and platform-specific generated files
-android/local.properties
-android/app/src/main/kotlin/com/example/now_in_flutter/
-ios/Flutter/AppFrameworkInfo.plist
-ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
-ios/Runner/AppDelegate.swift
-ios/Runner/Info.plist
-macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
-macos/Runner/AppDelegate.swift
-macos/Runner/Configs/AppInfo.xcconfig
-macos/RunnerTests/RunnerTests.swift
-windows/runner/Runner.rc
-windows/runner/runner.exe.manifest
-windows/runner/utils.cpp
-windows/runner/main.cpp
-windows/flutter/generated_plugins.cmake
-windows/flutter/generated_plugin_registrant.cc
-windows/flutter/generated_plugin_registrant.h
-windows/CMakeLists.txt
-linux/main.cc
-linux/my_application.cc
-linux/my_application.h
-linux/runner/CMakeLists.txt
-linux/runner/main.cc
-linux/runner/my_application.cc
-linux/runner/my_application.h
-linux/CMakeLists.txt
-linux/flutter/generated_plugins.cmake
-linux/flutter/generated_plugin_registrant.cc
-linux/flutter/generated_plugin_registrant.h
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release

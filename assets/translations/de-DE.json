@@ -1,0 +1,9 @@
+{
+  "login": "Anmelden",
+  "getStarted": "Loslegen",
+  "passwordExpired": "Ihr Passwort ist abgelaufen, bitte setzen Sie Ihr Passwort erneut zurück!",
+  "limitExceed": "Limit exceed.",
+  "somethingWentWrong": "Something went wrong, please try again. Thank you!",
+  "noInternetConnection": "No internet connection.",
+  "backButtonMessage": "Press back again to close the app"
+}

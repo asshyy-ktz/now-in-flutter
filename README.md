@@ -1,3 +1,3 @@
-# now_in_flutter
+# flutter_app_structure
 
 A new Flutter project.

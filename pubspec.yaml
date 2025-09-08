@@ -1,26 +1,80 @@
-name: now_in_flutter
+name: flutter_app_structure
 description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=3.2.3 <4.0.0'
+  sdk: ^3.9.0
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  fluttertoast: ^8.2.4
-  http: ^1.2.0
-  another_flushbar: ^1.12.29
-  provider: ^6.0.3
   get: ^4.6.5
-  shared_preferences: ^2.0.15
+  go_router: ^14.6.3
+  get_it: ^8.0.3
+  shared_preferences: ^2.3.5
+  flutter_svg: ^2.0.7
+  provider: ^6.1.2
+  http: ^1.3.0
+  url_launcher: any
+  lottie: ^3.3.1
+  font_awesome_flutter: ^10.7.0
+  cached_network_image: ^3.4.1
+  json_annotation: ^4.9.0
+  easy_localization: ^3.0.7
+  flutter_dotenv: ^5.2.1
+  fluttertoast: ^8.2.10
+  flutter_screenutil: ^5.9.3
+  connectivity_plus: ^6.1.3
+  another_flushbar: ^1.12.30
+  permission_handler: ^11.4.0
+  image: ^4.5.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints: ^5.0.0
 
 flutter:
   uses-material-design: true
+  
+  assets:
+    - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/json/
+    - assets/audios/
+    - .env
+    - assets/translations/
+    
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope/Manrope-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Manrope/Manrope-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/Manrope/Manrope-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/Manrope/Manrope-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/Manrope/Manrope-ExtraBold.ttf
+          weight: 900
+        - asset: assets/fonts/Manrope/Manrope-ExtraBold.ttf
+          weight: 800
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/Inter-Thin.otf
+          weight: 300
+        - asset: assets/fonts/inter/Inter-Bold.otf
+          weight: 700
+        - asset: assets/fonts/inter/Inter-Regular.otf
+          weight: 500
+        - asset: assets/fonts/inter/Inter-Medium.otf
+          weight: 600
+        - asset: assets/fonts/inter/Inter-SemiBold.otf
+          weight: 400
+        - asset: assets/fonts/inter/Inter-ExtraBold.otf
+          weight: 900
+        - asset: assets/fonts/inter/Inter-ExtraBold.otf
+          weight: 800
