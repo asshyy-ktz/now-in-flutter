@@ -162,17 +162,17 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         ),
       ],
     ),
-    // MyRoute(
-    //   name: RouteName.splash,
-    //   path: RouteName.splash,
-    //   builder: (context, _) => MyWillPopScope(
-    //     onWillPop: () async => (true, null),
-    //     child: SplashView(),
-    //   ),
-    // ).toRoute(
-    //   appStateNotifier,
-    //   parentNavigatorKey: NavigationService.navigatorKey,
-    // ),
+    MyRoute(
+      name: RouteName.splash,
+      path: RouteName.splash,
+      builder: (context, _) => MyWillPopScope(
+        onWillPop: () async => (true, null),
+        child: SplashView(),
+      ),
+    ).toRoute(
+      appStateNotifier,
+      parentNavigatorKey: NavigationService.navigatorKey,
+    ),
 
     // MyRoute(
     //   name: RouteName.intro,
